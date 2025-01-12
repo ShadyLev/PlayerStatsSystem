@@ -1,7 +1,7 @@
 # PlayerStatsSystem
 Small project desmostrating a small scale customisable player stat system.
 It started off as a small project but I got too caught up in adding improvements to the stats system haha.
-
+Click on this image to watch a quick demostration:
 [![Watch the video](https://img.youtube.com/vi/h3DXxTCytgk/0.jpg)](https://www.youtube.com/watch?v=h3DXxTCytgk)
 
 # Details
