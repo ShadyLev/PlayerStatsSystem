@@ -12,43 +12,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3340bcb1d86e4550beabe7a2d126ebbd, type: 3}
   m_Name: PlayerBaseStats
   m_EditorClassIdentifier: 
-  Stamina:
-    Type: 0
+  Stats:
+  - Type: 0
     Value: 100
+    MinValue: 0
     MaxValue: 100
     ChangePerSecond: 5
-  Strength:
-    Type: 1
-    Value: 100
-    MaxValue: 500
-    ChangePerSecond: 0
-  Sanity:
-    Type: 2
-    Value: 100
-    MaxValue: 100
-    ChangePerSecond: 0
-  Radiation:
-    Type: 3
+    ChangePerSecondMin: -10
+    ChangePerSecondMax: 10
+    ValueTest:
+      Value: 100
+      MinValue: 0
+      MaxValue: 100
+    CotTest:
+      Value: 5
+      MinValue: -20
+      MaxValue: 20
+  - Type: 1
     Value: 0
-    MaxValue: 100
-    ChangePerSecond: 0
-  Hunger:
-    Type: 4
-    Value: 0
-    MaxValue: 100
-    ChangePerSecond: 0.2
-  Thirst:
-    Type: 5
-    Value: 0
-    MaxValue: 100
-    ChangePerSecond: 0.2
-  Alcohol:
-    Type: 6
-    Value: 0
-    MaxValue: 100
-    ChangePerSecond: -0.5
-  Drug:
-    Type: 7
-    Value: 0
+    MinValue: 0
     MaxValue: 100
     ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 2
+    Value: 0
+    MinValue: 0
+    MaxValue: 100
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 3
+    Value: 0
+    MinValue: 0
+    MaxValue: 1
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 4
+    Value: 0
+    MinValue: 0
+    MaxValue: 1
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 5
+    Value: 0
+    MinValue: 0
+    MaxValue: 100
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 6
+    Value: 0
+    MinValue: 0
+    MaxValue: 100
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+  - Type: 7
+    Value: 0
+    MinValue: 0
+    MaxValue: 100
+    ChangePerSecond: 0
+    ChangePerSecondMin: 0
+    ChangePerSecondMax: 0
+    ValueTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0
+    CotTest:
+      Value: 0
+      MinValue: 0
+      MaxValue: 0

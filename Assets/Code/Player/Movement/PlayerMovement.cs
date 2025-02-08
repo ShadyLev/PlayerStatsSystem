@@ -121,7 +121,7 @@ namespace Shady.Game.PlayerMovement
         {
             _isSprinting = _sprintAction.ReadValue<float>() > 0;
 
-            if (_playerStats.Stamina <= 0)
+            if (_playerStats.GetStatValueFromType(StatType.Stamina) <= 0)
                 _isSprinting = false;
             
             HandleSprintStamina();
@@ -145,7 +145,7 @@ namespace Shady.Game.PlayerMovement
         private void HandleGravityAndJumping()
         {
             var isGrounded = _characterController.isGrounded;
-            var hasStaminaToJump = _playerStats.Stamina >= math.abs(_jumpModifierValue);
+            var hasStaminaToJump = _playerStats.GetStatValueFromType(StatType.Stamina) >= math.abs(_jumpModifierValue);
             if (isGrounded)
             {
                 _currentMovement.y = -0.5f;

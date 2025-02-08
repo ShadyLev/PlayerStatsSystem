@@ -139,5 +139,3 @@ Now it's not balanced but it's just an example of what you can make with this sy
 - Firstly you can see in the example above that we have some allocation when applying the pickup effects, this can be solved in the future by creating a struct which will hold the reference to the value.
 - Secondly the ValueChange modifier is not consistent with the system as it skips the mediator to apply its effects, now we can add it as a modifier with no time limit but on a large scale this could decrease performance
 as the list of modifiers would become larger and larger. I think we could create a seperate list of modifiers that are applied before the temporary ones.
-- Lastly adding new stats has a lot of boilerplate as we have to create a new query class for both stat changes which can be a lot. Creating a struct that can hold values would be better as we could create a Query struct each time instead 
-of updating and validating a Query class.

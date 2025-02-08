@@ -29,14 +29,14 @@ namespace Code.GUI.PlayerHUD
 
         private void Update()
         {
-            _staminaValueLabel.SetText(_player.Stats.Stamina.ToString(StringFormatType));
-            _strengthValueLabel.SetText(_player.Stats.Strength.ToString(StringFormatType));
-            _sanityValueLabel.SetText(_player.Stats.Sanity.ToString(StringFormatType));
-            _radiationValueLabel.SetText(_player.Stats.Radiation.ToString(StringFormatType));
-            _hungerValueLabel.SetText(_player.Stats.Hunger.ToString(StringFormatType));
-            _thirstValueLabel.SetText(_player.Stats.Thirst.ToString(StringFormatType));
-            _alcoholValueLabel.SetText(_player.Stats.Alcohol.ToString(StringFormatType));
-            _drugValueLabel.SetText(_player.Stats.Drug.ToString(StringFormatType));
+            _staminaValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Stamina).ToString(StringFormatType));
+            _strengthValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Strength).ToString(StringFormatType));
+            _sanityValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Sanity).ToString(StringFormatType));
+            _radiationValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Radiation).ToString(StringFormatType));
+            _hungerValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Hunger).ToString(StringFormatType));
+            _thirstValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Thirst).ToString(StringFormatType));
+            _alcoholValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Alcohol).ToString(StringFormatType));
+            _drugValueLabel.SetText(_player.Stats.GetStatValueFromType(StatType.Drug).ToString(StringFormatType));
         }
     }
 }
